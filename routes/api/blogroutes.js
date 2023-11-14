@@ -1,6 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const {BlogPost, User} = require('../../models');
+const {BlogPost} = require('../../models/BlogPost');
+const { User } = require('../../models/User');
+
 
 router.get('/posts', async (req, res) => {
     try { 
